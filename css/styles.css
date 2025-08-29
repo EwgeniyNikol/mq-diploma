@@ -93,10 +93,6 @@
   margin-left: 30px;
 }
 
-/* .tag,.theme-item,.teg-item,footer-item {
-  margin-right: 20px;
-} */
-
 .menu-link {
   text-decoration: none;
   color: #ffffff;
@@ -122,15 +118,13 @@
 .content_wrap {
   max-width: 1200px;
   margin: auto;
-  /* padding: 0; */
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
      
 }
 .course {
-  /*   width: 780px; */
-  width: 70%;
+   width: 70%;
   margin-right: 0;
   display: flex;
   flex-direction: column;
@@ -415,7 +409,7 @@ input:focus {
   color: #000000;
   font-size: 14px;
   padding: 0 5px 0 0;
-  /*   border: 2px solid red; */
+  
 }
 
 .list-theme-item {
@@ -1102,9 +1096,7 @@ input:focus {
   .shop_container {
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin-left: 57px;
-    margin-right: 57px; */
-   
+       
   }
       .shop_item_card {
     width: calc(50% - 34px);
@@ -1189,8 +1181,8 @@ input:focus {
   }
  
  }
-
-@media (max-width: 640px)  {
+      /* ////////////////////////3-медиа портрет///////////// */
+@media (max-width: 640px) and (orientation: portrait) {
   .header {
     background-position: -650px;
   }
@@ -1240,7 +1232,7 @@ input:focus {
     justify-content: space-between;
   }
 
-  .trends_card_item{
+  .trends_card_item {
     width: 100%;
     margin: 3px 0;
     
@@ -1264,17 +1256,17 @@ input:focus {
     border-bottom: solid 4px #eeeeee;
     margin-bottom: 35px;
   }
-      .course-info {
+  .course-info {
         width: 100%;
         margin-left: 0px;
-      }
+  }
 
   .course-preview {
     margin-right: 0;
     width: 100%; 
     overflow: hidden; 
     position: relative; 
-
+  }
   .course-img {
       width: 100%; 
       height: 100%; 
@@ -1310,7 +1302,7 @@ input:focus {
   
   } 
   .focus {
-    width: 85%;
+    width: 100%;
   }
   .mail {
     width: 100%;
@@ -1327,7 +1319,175 @@ input:focus {
   .tegs_our {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .tide_title {
+    font-size: 16px;
+  }
+
+  .shop_title {
+    font-size: 16px;
+  }
+  .shop {
+    width: 100%; 
+    flex-wrap: wrap;
     justify-content: space-between;
+    
+  }
+  .shop_container {
+    width: 100%; 
+    flex-wrap: wrap;
+  }
+  .shop_item_card {
+    width: 100%;
+    margin: 29px 56px 25px; 
+  }
+  .address {
+    margin-bottom: 40px;
+    width: 100%;
+    
+  }
+  
+}
+  /* ////////////////////////4-медиа пейзажн/////////////*/
+  @media (max-width: 640px) and (orientation: landscape) {
+  .header {
+    background-position: -650px;
+  }
+
+  .burger {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    left: 90vw; 
+    top: 40px; 
+    margin: 0 auto;
+  }
+
+  .img1 {
+    width: 100%;
+    padding-top: 172px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container {
+    padding: 43px 35px 124px;
+  }
+
+  .header-link {
+    display: block;
+    cursor: pointer;
+    order: -1;
+    align-self: end;
+  }
+  .header-title {
+    margin: 44px 0;
+    width: 100%;
+    font-size: 26px;
+  }
+
+  .trends {
+    padding: 30px 23px;
+  }
+  .trends_card  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .trends_card_item {
+    width: calc(50% - 4px);
+    margin: 4px 0;
+    
+  }
+
+  .trend_content_title__link {
+    font-size: 16px;
+  }
+
+  .content_wrap {
+    flex-direction: column;
+    padding: 44px 15px;
+  }
+   .course {
+    width: 100%;
+   }
+
+  .courses {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid 4px #eeeeee;
+    margin-bottom: 35px;
+  }
+  .course-info {
+        width: 100%;
+        margin-left: 0px;
+  }
+
+  .course-preview {
+    margin-right: 0;
+    width: 100%; 
+    overflow: hidden; 
+    position: relative; 
+  }
+  .course-img {
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover; 
+      display: block;
+ }
+
+  .course-info {
+    margin-top: 16px;
+    justify-content: space-between;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .sidebar {
+    margin-left: 0;
+    width: 100%;
+    padding-left: 0px;
+  }
+  .tide_title {
+    font-size: 16px;
+  }
+  .courses_right {
+    width: 100%;
+  }
+  .news_title {
+    max-width: 100%;
+}
+.search {
+ width: 100%;
+  
+  } 
+  .focus {
+    width: 100%;
+  }
+  .mail {
+    width: 100%;
+  }
+  label {
+    width: 100%;
+  }
+  .imput {
+    width: 100%;
+  }
+  .btnrt {
+    width: 100%;
+  }
+  .tegs_our {
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
   }
   
