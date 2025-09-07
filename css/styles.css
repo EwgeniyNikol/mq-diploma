@@ -233,7 +233,6 @@
   margin-left: 20px;
   padding: 0px;
   margin-top: 0px;
-  
 }
 .news_title {
   max-width: 210px;
@@ -259,7 +258,6 @@
   margin: 0px;
   padding: 0px;
 }
-
 .tide {
   text-align: center;
   display: flex;
@@ -319,21 +317,17 @@
   flex-wrap: nowrap;
   width: 17.5rem;
   height: 3rem;
-  
-  margin-top: 60px;
+    margin-top: 60px;
 }
-
 .btn:hover {
   background-color: #323232;
 }
-
 *button:hover {
   background: #005603;
 }
 .btnrt:hover {
   background-color: #323232;
 }
-
 .focus {
   height: 3rem;
   width: 14.36rem; 
@@ -380,7 +374,6 @@ input:focus {
 .tegs_our {
   width: 17.5rem;
   margin-top: 25px;
-  
 }
 .teg {
   display: inline-block;
@@ -409,14 +402,11 @@ input:focus {
   color: #000000;
   font-size: 14px;
   padding: 0 5px 0 0;
-  
 }
-
 .list-theme-item {
   margin-top: 14px;
   margin-left: 3px;
 }
-
 .list-theme-item::after {
   content: "";
   display: block;
@@ -428,7 +418,6 @@ input:focus {
 .list-theme-link:hover {
   color: #b59f5b;
 }
-
 .theme_number {
   display: inline-block;
   vertical-align: top;
@@ -530,7 +519,6 @@ input:focus {
   width: 100%;
   z-index: 6;
   background-color: rgba(0, 0, 0, 0.5); 
-  
 }
  ._hidden {
     display: none;
@@ -550,9 +538,8 @@ input:focus {
   right: -40px;
   top: -25px;
   cursor: pointer;
-  
-}
 
+}
 .cls-btn {
   cursor: pointer;
   width: 25px;
@@ -563,7 +550,6 @@ input:focus {
   border: none;
   background-color: rgba(0, 0, 0, 0);
 }
-
 .popup-title {
   position: relative;
   font-family: opensans_bold;
