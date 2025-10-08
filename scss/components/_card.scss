@@ -1,0 +1,137 @@
+.card {
+  margin: 0 auto;
+  background-color: #F4F6F8;
+}
+
+.card__wrap {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 110px 0 119px 0;
+}
+
+.card__title {
+//   margin: 0 auto;
+//   padding-top: 113px;
+  margin-left: 119px;
+  max-width: 1014px;
+  font-size: 44px;
+  line-height: 54px;
+  font-family: var(--font-inter-sanserif);
+  font-weight: 800;
+  text-align: center;
+//   line-height: 1.23;
+  color: var(--main-color-black);
+}
+
+.card__offer {
+//   margin: 40px;
+  padding: 40px 20px 30px 155px;
+  font-family: var(--font-inter-sanserif);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+//   text-align: center;
+  color: var(--main-color-black);
+}
+
+.card__button {
+  display: flex;
+  margin: 0 0 0 500px;
+  padding: 17px 40px 14px 42px;
+  box-sizing: border-box;
+  border: none;
+  width: 235px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: var(--main-color-red);
+  color: var(--main-color-white);
+  font-size: 20px;
+  font-family: var(--font-inter-sanserif);
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.card__section {
+  display: flex;
+  position: relative;
+//   max-width: 1280px;
+  padding-top: 40px;
+//   justify-content: center;
+  gap: 20px;
+
+}
+
+.card__shoose {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 409px;
+  background: var(--main-color-white);
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: #c73713;
+}
+
+.hero__button:hover {
+  background-color: #c73713;
+}
+
+.card__name {
+  font-family: var(--font-inter-sanserif);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--main-color-black);
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+.card__text {
+  font-family: var(--font-inter-sanserif);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 24px 78px 91px 32px;
+}
+
+.card__shoose-img-1::before {
+  background-image: url("../images/image_mers.png");
+  content: "";
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 85px;
+  position: absolute;
+  right: 45px;
+  top: 165px;
+}
+
+.card__shoose-img-2::before {
+  background-image: url("../images/image_avtored.png");
+  content: "";
+  background-repeat: no-repeat;
+  width: 225px;
+  height: 120px;
+  position: absolute;
+  right: 20px;
+  top: 150px;
+}
+
+.card__shoose-img-3::before {
+  background-image: url("../images/crivay.png");
+  content: "";
+  background-repeat: no-repeat;
+  width: 225px;
+  height: 130px;
+  position: absolute;
+  right: 20px;
+  top: 120px;
+}
+

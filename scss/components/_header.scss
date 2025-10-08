@@ -1,0 +1,322 @@
+/* Reset and base styles  */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  background: none;
+  background-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+/* /////////////////////////////////content///////////////////// */
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../font/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("InterBlack"), url("../font/Inter-Black.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("InterMedium"), url("../font/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter", sans-serif;
+  src: local("InterRegular"), url("../font/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --main-color-white: #ffffff;
+  --main-color-black: #000000;
+  --main-color-grey: #a3a3a3;
+  --main-color-red: #f50e30;
+  --font-inter-sanserif: "Inter", sans-serif;
+}
+/* var(--font-inter-sanserif); */
+
+body {
+  background-color: var(--main-color-white);
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  margin: 46px auto 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px;
+}
+
+.header__logo {
+  width: 60px;
+}
+
+.header__list {
+  display: flex;
+  font-size: 16px;
+  font-family: var(--font-inter-sanserif);
+  font-weight: 400;
+  margin-left: 53px;
+  width: 646px;
+  justify-content: space-between;
+}
+
+.header__link {
+  color: var(--main-color-black);
+}
+
+.header__address {
+  display: flex;
+  align-items: center;
+}
+
+.header__social-list {
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+
+}
+
+.header__social-icon {
+  margin-right: 10px;
+}
+
+.header__social-icon:hover {
+  transform: scale(1.1);
+}
+
+.header__social-icon:last-child {
+  margin-right: 12px;
+}
+// .social-icon {
+//   // fill: #F50E30;
+// }
+
+// .header__social-telegram {
+//   /* display: block; */
+//   /* background-image: url("../images/Vertical_container.png"); */
+//   /* background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   width: 30px;
+//   height: 30px; */
+// }
+
+// .header__social-whatsapp {
+//   /* display: block; */
+//   /* background-image: url("../images/Vertical_container _Vsap.png"); */
+//   /* background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   width: 30px;
+//   height: 30px; */
+// }
+
+// .header__social-youtube {
+//   /* display: block;
+//   background-image: url("../images/Vertical_containe_yotbe.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   width: 30px;
+//   height: 30px; */
+// }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header__tel {
+  display: flex;
+  flex-direction: column;
+  padding: 1px 7px 0 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--main-color-black);
+}
+
+a {
+  color: var(--main-color-black);
+}
+
+.header__tel-number:hover {
+  color: #a3a3a3;
+  // text-decoration: underline;
+}
+
+.hero__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  margin:0 auto;
+  padding-top: 90px;
+  position: relative;
+}
+
+.hero__wrap::before {
+  background-image: url("../images/Image_avto.png");
+  content: "";
+  width: 816px;
+  height: 417px;
+  position: absolute;
+  right: -124px;
+  top: 130px;
+}
+
+.hero__title {
+  max-width: 672px;
+  font-size: 52px;
+  font-family: var(--font-inter-sanserif);
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.hero__content {
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: var(--font-inter-sanserif);
+  font-weight: 500;
+  margin-bottom: 44px;
+}
+
+.hero__big-text {
+  text-transform: uppercase;
+}
+
+.hero__button {
+  box-sizing: border-box;
+  border: none;
+  width: 312px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: var(--main-color-red);
+  color: var(--main-color-white);
+  font-size: 24px;
+  font-family: var(--font-inter-sanserif);
+  font-weight: 700;
+  padding: 18px 54px;
+  margin-bottom: 79px;
+}

@@ -1,552 +1,549 @@
 <!DOCTYPE html>
-<html lang="en, ru">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/main.css ">
+    <link rel="stylesheet" href="scss/normalize.css ">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header-link">
-        <div class="logo">
-          <a href="#" class="logo-link">
-            <img class="img1" width=180px src="svg/noemi-logo.svg" alt="" class="logo-img">
-          </a>
-        </div>
-        <svg version="1.1" fill="#fff" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="burger">
-          <title>Menu</title>
-          <path d="M5.333 22.667h21.333v-2.667h-21.333v2.667zM5.333 17.333h21.333v-2.667h-21.333v2.667zM5.333 9.333v2.667h21.333v-2.667h-21.333z"></path>
-        </svg>
-        <nav class="menu">
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a href="#0" class="menu-link">Главная</a>
-            </li>
-            <li class="menu-item">
-              <a href="#0" class="menu-link">Посты</a>
-            </li>
-            <li class="menu-item">
-              <a href="#0" class="menu-link">Статьи</a>
-            </li>
-            <li class="menu-item">
-              <a href="#0" class="menu-link">Теги</a>
-            </li>
-            <li class="menu-item">
-              <a href="#0" class="menu-link">Темы</a>
-            </li>
-            <li class="menu-item">
-              <a href="#0" class="menu-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
-    </div>
-  </header>
-  <div id="popup" class="popup _hidden">
-    <div id="popup-container" class="popup-container">
-      <div class="close">
-        <button type="button" id="close-popup" class="cls-btn">
-          <span class="visually-hidden">Закрыть форму обратной связи</span>
-        </button>
-      </div>
-      <form class="popup-form" action="#">
-
-        <h3 class="popup-title">Ваш Фидбек</h3>
-        <div class="select-box">
-          <label class="select-label" for="select-field">
-            <span class="select-label-text">Как часто вы заходите на сайт?</span>
-            <select class="select-field" name="select-field" id="select-field" required="">
-
-              <option value="Почти каждый день">Почти каждый день</option>
-              <option value="Раз в несколько дней">Раз в несколько дней</option>
-              <option value="Раз в несколько недель">Раз в несколько недель</option>
-              <option value="Несколько раз в год">Несколько раз в год</option>
-
-            </select>
-
-          </label>
-        </div>
-        <span class="title-mail">Вы подписаны на e-mail рассылку?</span>
-        <div class="radio-box">
-          <input id="input-yes" class="radio radio_yes" type="radio" name="radio" checked="">
-          <label for="input-yes" class="checkbox-label checkbox-label_yes">Да</label>
-
-          <input id="input-no" class="radio radio_no" type="radio" name="radio">
-          <label for="input-no" class="checkbox-label checkbox-label_no">Нет</label>
-
-        </div>
-        <div class="text-box">
-          <label for="field" class="text-label">
-            <span class="rem">Расскажите, какой контент вы хотели бы
-              видеть на нашем сайте?</span>
-            <textarea id="field" class="field" placeholder="Может, больше рецептов?"></textarea>
-          </label>
-        </div>
-        <div class="button">
-          <button type="submit" class="button-submit">Отправить
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <section class="trends">
-    <h2 class="trends_title"><a class="trends_title_link" href="#">Сейчас в тренде</a></h2>
-    <div class="trends_card">
-      <article class="trends_card_item trends_card_item_1">
-        <div class="trend_content">
-          <ul class="trend_content_list">
-            <li class="trend_content_item">
-              <a href="#" class="trend_content_link">
-                Lifestyle
-              </a>
-            </li>
-            <li class="trend_content_item">
-              <a href="#" class="trend_content_link">
-                INTERIOR
-              </a>
-            </li>
-          </ul>
-
-          <h3 class="trend_content_title trends_title_1">
-            <a href="#" class="trend_content_title__link">Сейчас в тренде: сад на подоконнике</a>
-          </h3>
-
-        </div>
-      </article>
-
-      <article class="trends_card_item trends_card_item_2">
-        <div class="trend_content">
-          <ul class="trend_content_list">
-            <li class="trend_content_item">
-              <a href="#" class="trend_content_link">
-                Food
-              </a>
-            </li>
-          </ul>
-
-          <h3 class="trend_content_title trends_title_2">
-            <a href="#" class="trend_content_title__link">Сыры на красивых картинках из интернета: какие они на вкус?</a>
-          </h3>
-
-        </div>
-      </article>
-      <article class="trends_card_item trends_card_item_3">
-        <div class="trend_content">
-          <ul class="trend_content_list">
-            <li class="trend_content_item">
-              <a href="#" class="trend_content_link">
-                Lifestyle
-              </a>
-            </li>
-            <li class="trend_content_item">
-              <a href="#" class="trend_content_link">
-                TRAVEL
-              </a>
-            </li>
-          </ul>
-
-          <h3 class="trend_content_title trends_title_3">
-            <a href="#" class="trend_content_title__link">
-              Собираемся в первый поход в горы
-            </a>
-          </h3>
-
-        </div>
-      </article>
-
-      <article class="trends_card_item trends_card_item_4">
-        <div class="trend_content">
-          <ul class="trend_content_list">
-            <li class="trend_content_item">
-              <a href="#" class="trend_content_link">
-                food
-              </a>
-            </li>
-            <li class="trend-box-categories-list__item">
-              <a href="#" class="trend_content_link">
-                health
-              </a>
-            </li>
-          </ul>
-
-          <h3 class="trend_content_title trends_title_4">
-            <a href="#" class="trend_content_title__link">
-              Сейчас в тренде: Сколько витамина С в лимонах?
-            </a>
-          </h3>
-
-        </div>
-      </article>
-    </div>
-  </section>
-  <div class="content_wrap">
-    <main class="course">
-      <article class="courses">
-        <div class="course-preview">
-          <img class="course-img" src="images/last-post1.jpg" alt>
-        </div>
-        <div class="course-info">
-          <ul class="list">
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">travel</a>
-            </li>
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">health</a>
-            </li>
-          </ul>
-
-          <h4 class="course-name">
-            <a class="course-name" href="#0">10 мест, ради которых стоит
-              проснуться на рассвете </a>
-          </h4>
-          <div class="date">
-            <time class="card-date" datetime="2019-06-10">10 июня 2019 </time> <a class="avtor">Неизвестный автор</a>
-          </div>
-          <div class="course-description">
-            <p class="text">
-              Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class="courses">
-        <div class="course-preview">
-          <img class="course-img" src="images/last-post2.jpg" alt>
-        </div>
-        <div class="course-info">
-          <ul class="list">
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">health</a>
-            </li>
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">lifestyle</a>
-            </li>
-          </ul>
-          <h4 class="course-name">
-            <a class="course-name" href="#0"> Йога для начинающих в
-              домашних условиях </a>
-          </h4>
-          <div class="date">
-            <time class="card-date" datetime="2019-06-10">10 июня 2019 </time> <a class="avtor">Неизвестный автор</a>
-          </div>
-          <div class="course-description">
-            <p class="text">
-              Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class="courses">
-        <div class="course-preview">
-          <img class="course-img" src="images/last-post3.jpg" alt>
-        </div>
-        <div class="course-info">
-          <ul class="list">
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">music</a>
-            </li>
-          </ul>
-
-          <h4 class="course-name">
-            <a class="course-name" href="#0">Лучшие музыкальные
-              фестивали этого лета</a>
-          </h4>
-          <div class="date">
-            <time class="card-date" datetime="2019-06-10">10 июня 2019 </time> <a class="avtor">Неизвестный автор</a>
-          </div>
-          <div class="course-description">
-            <p class="text">
-              Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку? <br>
-              Мы составили список лучших летних фестивалей по всему миру.
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class="courses">
-        <div class="course-preview">
-          <img class="course-img" src="images/last-post4.jpg" alt>
-        </div>
-        <div class="course-info">
-          <ul class="list">
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">LYFESTYLE</a>
-            </li>
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">FOOD</a>
-            </li>
-          </ul>
-
-          <h4 class="course-name">
-            <a class="course-name" href="#0">Наукоёмкий подход к
-              кулинарии </a>
-          </h4>
-          <div class="date">
-            <time class="card-date" datetime="2019-06-10">10 июня 2019 </time> <a class="avtor">Неизвестный автор</a>
-          </div>
-          <div class="course-description">
-            <p class="text">
-              Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class="courses">
-        <div class="course-preview">
-          <img class="course-img" src="images/last-post5.jpg" alt>
-        </div>
-        <div class="course-info">
-          <ul class="list">
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">Lifestyle</a>
-            </li>
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">INTERIOR</a>
-            </li>
-            <li class="frame" href="">
-              <a class="frame_heat" href="#0">art</a>
-            </li>
-          </ul>
-
-          <h4 class="course-name">
-            <a class="course-name" href="#0">делаем модные принты на
-              подушках для интерьера</a>
-          </h4>
-          <div class="date">
-            <time class="card-date" datetime="2019-06-10">10 июня 2019 </time> <a class="avtor">Неизвестный автор</a>
-          </div>
-          <div class="course-description">
-            <p class="text">
-              Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
-            </p>
-          </div>
-        </div>
-      </article>
-
-    </main>
-   <aside class="sidebar">
-      <section class="latestposts">
-        <div class="tide">
-          <h3 class="tide_title"> новые посты </h3>
-        </div>
-        <article class="courses_right">
-          <div class="news-preview">
-            <img class="news-img" src="images/2.jpg" alt>
-          </div>
-          <div class="news-info">
-            <time class="card-date" datetime="2019-06-14">14 июня 2019 </time>
-            <h4 class="news_title">
-              <a class="news_right" href="#0">10 мест, ради которых стоит
-                проснуться</a?> </h4>
-          </div>
-        </article>
-        <article class="courses_right">
-          <div class="news-preview">
-            <img class="news-img" src="images/151.jpg" alt>
-          </div>
-          <div class="news-info">
-            <time class="card-date" datetime="2019-06-14">14 июня 2019 </time>
-            <h4 class="news_title">
-              <a class="news_right" href="#0">Йога для домашних</a>
-            </h4>
-          </div>
-        </article>
-        <article class="courses_right">
-          <div class="news-preview">
-            <img class="news-img" src="images/45.jpg" alt>
-          </div>
-          <div class="news-info">
-            <time class="card-date" datetime="2019-06-14">14 июня 2019 </time>
-            <h4 class="news_title">
-              <a class="news_right" href="#0">как мы превратили классное место в балкон</a>
-            </h4>
-          </div>
-        </article>
-        <article class="courses_right">
-          <div class="news-preview">
-            <img class="news-img" src="images/501.jpg" alt>
-          </div>
-          <div class="news-info">
-            <time class="card-date" datetime="2019-06-14">14 июня 2019 </time>
-            <h4 class="news_title">
-              <a class="news_right" href="#0">Кулинарный подход
-                к науке</a>
-            </h4>
-          </div>
-        </article>
-        <article class="courses_right">
-          <div class="news-preview">
-            <img class="news-img" src="images/7.jpg" alt>
-          </div>
-          <div class="news-info">
-            <time class="card-date" datetime="2019-06-14">14 июня 2019 </time>
-            <h4 class="news_title">
-              <a class="news_right" href="#0">лучшие прически для распущенных волос</a>
-            </h4>
-          </div>
-        </article>
-      </section>
-      <form class="search">
-        <input class="focus" type="search" name="query" placeholder="Найти...">
-        <button class="btn" type="submit">
-        </button>
-      </form>
-    <section>
-      <div class="tide">
-        <h3 class="tide_title"> рассылка </h3>
-      </div>
-      <form class="mail">
-        <label>
-          <input class="imput" type="email" name="email" placeholder="Ваш email-адрес">
-        </label>
-        <button class="btnrt">
-          <span>Подписаться</span>
-        </button>
-      </form>
-    </section>
-    <section>
-      <div class="tide">
-        <h3 class="tide_title">теги </h3>
-      </div>
-      <section class="tegs_our">
-        <div class="teg">
-          <h4><a class="tegs" href=""> fashion </a></h4>
-        </div>
-        <div class="teg">
-          <h4><a class="tegs" href=""> music </a></h4>
-        </div>
-        <div class="teg">
-          <h4><a class="tegs" href=""> Lifestyle </a></h4>
-        </div>
-        <div class="teg">
-          <h4><a class="tegs" href=""> art </a></h4>
-        </div>
-        <div class="teg">
-          <h4><a class="tegs" href=""> Interior </a></h4>
-        </div>
-        <div class="teg">
-          <h4><a class="tegs" href=""> travel </a></h4>
-        </div>
-        <div class="teg">
-          <h4><a class="tegs" href=""> food </a></h4>
-        </div>
-        <div class="teg">
-          <h4><a class="tegs" href=""> HEALTH </a></h4>
-        </div>
-    </section>
-    <section>
-      <div class="tide">
-        <h3 class="tide_title"> темы </h3>
-      </div>
-      <ul class="list-theme">
-        <li class="list-theme-item">
-          <a class="list-theme-link" href="#0">Красота</a><span class="theme_number">12</span>
-        </li>
-        <li class="list-theme-item">
-          <a class="list-theme-link" href="#0">Здоровье</a><span class="theme_number">4</span>
-        </li>
-        <li class="list-theme-item">
-          <a class="list-theme-link" href="#0">Образ жизни</a><span class="theme_number">145</span>
-        </li>
-        <li class="list-theme-item">
-          <a class="list-theme-link" href="#0">Музыка</a><span class="theme_number">28</span>
-        </li>
-        <li class="list-theme-item">
-          <a class="list-theme-link" href="#0">Спорт</a><span class="theme_number">62</span>
-        </li>
-        <li class="list-theme-item">
-          <a class="list-theme-link" href="#0">Йога</a><span class="theme_number">8</span>
-        </li>
-      </ul>
-    </section>
-  </aside>
- </div>
-  <section class="shop">
-    <h2 class="shop_title">Наши изделия</h2>
-    <div class="shop_container">
-      <article class="shop_item_card">
-        <picture>
-          <source srcset="images/shop-item-desk1.jpg" width="100%" media="(min-width: 1200px)">
-          <source srcset="images/shop-item-tablet1.jpg" width="100%" media="(min-width: 640px)">
-          <source srcset="images/shop-item-mobile1.jpg" width="100%" media="(max-width: 639px)">
-          <img src="images/shop-item-tablet1.jpg" width="100%" alt="подушка" class="shop_img">
-        </picture>
-        <div class="shop_text_container">
-          <h3 class="shop_name_link" href="">подушки на диван</h3>
-          <p class="shop_text">Набор издвух подушек с модными принтами. Видео о создании <a href="" class="shop-link">здесь</a>.</p>
-          <div class="about_price">
-            <div class="prices">
-              <div class="price_link"> <span>1000 ₽</span>800 ₽</div>
+        <header class="header">
+            <div class="header__logo">
+                <a href="#"><img src="images/image.png" class="header__logo-img" alt="логотип компании"></a>
             </div>
-            <button type="submit" class="price_button">В магазин</button>
-          </div>
-        </div>
-      </article>
-      <article class="shop_item_card">
-        <picture>
-          <source srcset="images/shop-item-desk2.jpg" width="100%" media="(min-width: 1200px)">
-          <source srcset="images/shop-item-tablet2.jpg" width="100%" media="(min-width: 640px)">
-          <source srcset="images/shop-item-mobile2.jpg" width="100%" media="(max-width: 639px)">
-          <img src="images/shop-item-tablet2.jpg" width="100%" alt="кукла" class="shop_img">
-        </picture>
-        <div class="shop_text_container">
-          <h3 class="shop_name_link" href="#">кукла "зайчик"</h3>
-          <p class="shop_text">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="" class="shop-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
-          <div class="about_price">
-            <div class="prices">
-              <div class="price_link">3500 ₽</div>
-            </div>
-            <button class="price_button">В магазин</button>
-          </div>
-        </div>
-      </article>
-      <article class="shop_item_card">
-        <picture>
-          <source srcset="images/shop-item-desk3.jpg" width="100%" media="(min-width: 1200px)">
-          <source srcset="images/shop-item-tablet3.jpg" width="100%" media="(min-width: 640px)">
-          <source srcset="images/shop-item-mobile3.jpg" width="100%" media="(max-width: 639px)">
-          <img src="images/shop-item-tablet3.jpg" width="100%" alt="рамка" class="shop_img">
-        </picture>
-        <div class="shop_text_container">
-          <h3 class="shop_name_link" href="">шестиугольная рамка</h3>
-          <p class="shop_text">Необычная рамка для украшения дома из видео <a href="" class="shop-link">"Как сделать рамку из подручных средств за 30 минут"</a></p>
-          <div class="about_price">
-            <div class="prices">
-              <div class="price_link"> <span>500 ₽</span>400 ₽</div>
-            </div>
-            <button class="price_button">В магазин</button>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-  <footer class="icon">
-    <div class="footer-top">
-      <address class="address">
-        <ul class="icon_link">
-          <li class="icon-list-item">
-            <a class="ikon-footer ikon-tumblr" href="#">
-              <span class="visualy-hidden"> Профиль компании в Dribbble </span>
-            </a>
-          </li>
-          <li class="icon-list-item">
-            <a class="ikon-footer ikon-tumblr_1" href="#">
-              <span class="visualy-hidden"> Профиль компании в Пинтерест </span>
-            </a>
-          </li>
-          <li class="icon-list-item">
-            <a class="ikon-footer ikon-tumblr_2" href="#">
-              <span class="visualy-hidden"> Профиль компании в Твитере </span>
-            </a>
-          </li>
-        </ul>
-      </address>
-      <a class="copyright" href="#0">
-        <p>Copyright © 2009–2019 City Blog LLC.</p>
-      </a>
-    </div>
-  </footer>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link" href="#">О нас</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">Услуги</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">Как купить</a>
+                </li>
+                <li class="header__item">
+                     <a class="header__link" href="#">Преимущества</a>
+                 </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">Отзывы</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <address class="header__address">
+                <div class="header__social">
+                    <ul class="header__social-list">
+                        <li class="header__social-icon">
+                            <a href="#" class="header__social-telegram">
+                              <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                <use href="images/sprite.svg#telegram-social"></use>
+                              </svg>
+                                <span class="visually-hidden">ссылка на телеграм</span>
+                            </a>
+                        </li>
+                        <li class="header__social-icon">
+                            <a href="#" class="header__social-whatsapp">
+                              <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                <use href="images/sprite.svg#watsap-social"></use>
+                              </svg>
+                                <span class="visually-hidden">ссылка на ветсап</span>
+                            </a>
+                        </li>
+                        <li class="header__social-icon">
+                            <a href="#" class="header__social-youtube">
+                              <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                <use href="images/sprite.svg#youtube-social"></use>
+                              </svg>
+                                <span class="visually-hidden">ссылка на ютуб</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__tel">
+                    <a class="header__tel-number" href="tel:+78352675252">+7 (8352) 67-52-52</a>
+                    <a class="header__tel-number" href="tel:+79279971242">+7 (927) 997-12-42</a>
+                </div>
+            </address>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <div class="hero__wrap">
+                    <h1 class="hero__title">Купите автомобиль дешевле на 60%*</h1>
+                    <p class="hero__content">
+                        Привезем автомобиль под ключ со всеми документами. Подбор автомобиля
+                        под любой запрос
+                        <span class="hero__big-text">бесплатно</span>
+                    </p>
+                    <a class="hero__button" href="#">Оставить заявку</a>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="card__wrap">
+                    <h2 class="card__title">
+                        Поможем вам выгодно купить и привезти автомобиль в любую точку России
+                    </h2>
+                    <h3 class="card__offer">
+                        Предлагаем Вам купить автомобиль дешевле и лучше, но за тот же бюджет
+                    </h3>
+                    <a class="card__button" href="#">Оставить заявку</a>
+                    <ul class="card__section">
+                        <li class="card__shoose card__shoose-img-1">
+                            <h4 class="card__name">С пробегом</h4>
+                            <p class="card__text">
+                                Предлагаем купить автомобиль дешевле до 60%, от рыночной цены на
+                                Авито и Авто.ру
+                            </p>
+                        </li>
+                        <li class="card__shoose card__shoose-img-2">
+                            <h4 class="card__name">Новые</h4>
+                            <p class="card__text">
+                                Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной
+                                ценына Авито и Авто.ру
+                            </p>
+                        </li>
+                        <li class="card__shoose card__shoose-img-3">
+                            <h4 class="card__name">Под ваш бюджет</h4>
+                            <p class="card__text">
+                                Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной
+                                ценына Авито и Авто.ру
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="aboutas">
+              <div class="aboutas__wrap">
+                <img src="images/container-about-1x.png" alt="фото офиса" class="aboutas__img">
+                <div class="aboutas__content">
+                  <h2 class="aboutas__title"> О нас </h2>
+                  <p class="aboutas__text"> Мы автосалон и официальный партнер крупнейших мировых авто-аукционов: IAA (Insurance Auto Auction), Copart, Manheim.</p>
+                  <ul class="aboutas__info">
+                    <li class="aboutas__abinfo aboutas__abinfo-info-1">Работаем без посредников</li>
+                    <li class="aboutas__abinfo aboutas__abinfo-info-2">Успешный опыт 10 лет</li>
+                    <li class="aboutas__abinfo aboutas__abinfo-info-3">Отлаженная логистика</li>
+                  </ul>
+                  <div class="aboutas__frame">
+                    <p class="aboutas__info-text">Мы берем на себя полное сопровождение сделки до передачи автомобиля в руки клиенту. </p>
+                  </div>
+                  <a class="aboutas__buttom" href="#">Оставить заявку</a>
+                </div>
+              </div>
+            </section>
+
+            <section class="shop">
+                <div class="shop__wrap">
+                    <h2 class="shop__title">Какие авто привозим?</h2>
+                    <a class="shop__text">
+                        Привозим авто не старше 7 лет на момент растаможки.
+                    </a>
+                    <div class="shop__content-card">
+                        <div class="shop__card">
+                            <img src="images/Rav4.png" alt="изображение авто тойота раф4" class="shop__img">
+                            <a class="shop__avto-title">Toyota RAV4 2022</a>
+                            <div class="shop__text-price">
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt">Пробег </span>
+                                    <span class="shop__strit-card-mean"> 5 700 км </span>
+                                </div>
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt"> Объем двигателя </span>
+                                    <span class="shop__strit-card-mean"> 2.0 </span>
+                                </div>
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt"> Мощность </span>
+                                    <span class="shop__strit-card-mean">149 л.с.</span>
+                                </div>
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt">Коробка</span>
+                                    <span class="shop__strit-card-mean">Автомат</span>
+                                </div>
+                                <div class="shop__offer">
+                                  <div class="shop__price">
+                                      <span class="shop__price-text-prim">Цена на вторичном рынке в РФ</span>
+                                      <span class="shop__price-old">3 300 000 ₽</span>
+                                  </div>
+                                  <div class="shop__price">
+                                      <span class="shop__price-text-prim">Цена автомобиля “под ключ”</span>
+                                      <span class="shop__price-now-price">2 700 000 ₽</span>
+                                  </div>
+                                </div>
+                            </div>
+                            <a class="shop__button" href="#">Оставить заявку</a>
+                        </div>
+                        <div class="shop__card">
+                            <img src="images/audiImage.png" alt="изображени авто ауди ку5" class="shop_img">
+                            <a class="shop__avto-title">Audi Q5 2021</a>
+                            <div class="text-price">
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt">Пробег </span>
+                                    <span class="shop__strit-card-mean"> 5 700 км </span>
+                                </div>
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt"> Объем двигателя </span>
+                                    <span class="shop__strit-card-mean"> 2.0 </span>
+                                </div>
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt"> Мощность </span>
+                                    <span class="shop__strit-card-mean">149 л.с.</span>
+                                </div>
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt">Коробка</span>
+                                    <span class="shop__strit-card-mean">Автомат</span>
+                                </div>
+                                <div class="shop__offer">
+                                  <div class="shop__price">
+                                      <span class="shop__price-text-prim">Цена на вторичном рынке в РФ</span>
+                                      <span class="shop__price-old">3 250 000 ₽</span>
+                                  </div>
+                                  <div class="shop__price">
+                                      <span class="shop__price-text-prim">Цена автомобиля “под ключ”</span>
+                                      <span class="shop__price-now-price">2 500 000 ₽</span>
+                                  </div>
+                                </div>
+                            </div>
+                            <a class="shop__button" href="#">Оставить заявку</a>
+                        </div>
+                        <div class="shop__card">
+                            <img src="images/HondaImage.png" alt="изображение авто хонда црв" class="shop_img">
+                            <a class="shop__avto-title">Honda CR-V 2021</a>
+                            <div class="shop__text-price">
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt">Пробег </span>
+                                    <span class="shop__strit-card-mean"> 5 700 км </span>
+                                </div>
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt"> Объем двигателя </span>
+                                    <span class="shop__strit-card-mean"> 2.0 </span>
+                                </div>
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt"> Мощность </span>
+                                    <span class="shop__strit-card-mean">149 л.с.</span>
+                                </div>
+                                <div class="shop__strit">
+                                    <span class="shop__strit-card-txt">Коробка</span>
+                                    <span class="shop__strit-card-mean">Автомат</span>
+                                </div>
+                                    <div class="shop__price">
+                                    <span class="shop__price-text-prim">Цена на вторичном рынке в РФ</span>
+                                    <span class="shop__price-old">2 900 000 ₽</span>
+                                </div>
+                                <div class="shop__price">
+                                    <span class="shop__price-text-prim">Цена автомобиля “под ключ”</span>
+                                    <span class="shop__price-now-price">2 300 000 ₽</span>
+                                </div>
+                            </div>
+                            <a class="shop__button" href="#">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advice">
+              <div class="advice__wrap">
+                <div class="advice__content">
+                  <div class="advice__text">
+                    <h2 class="advice__title">Мы советуем подбирать автомобиль с бюджетом от <strong class="advice__prim">1,3 млн</strong></h2>
+                    <p class="advice__info">c учетом расходов на доставку, растаможку и наши услуги.</p>
+                    <a class="advice__buttom" href="#">Оставить заявку</a>
+                  </div>
+                  <img src="images/Image_toyta_1x.png" alt="изображение авто тойота" class="advice__img">                 
+                </div>
+              </div>
+            </section>
+            
+            <section class="reviws">
+                <div class="reviws__wrap">
+                    <h2 class="reviws__title">Обзоры привезенных авто</h2>
+                    <div class="reviws__content">
+                        <img src="images/lexusavto.png" alt="изображение авто лексус " class="reviws__img1">
+                        <img src="images/lexusjxavto.png" alt="изображение авто лексус" class="reviws__img2">
+                        <img src="images/toytavto.png" alt="изображение авто тойота" class="reviws__img1"> 
+                    </div>
+                    <p class="reviws__info">Привезли <strong class="reviws__prim">Lexus GX 460 с COPART1 </strong> за <strong class="advice__prim">1 800 000 ₽ </strong>  </p> 
+                    <div class="reviws__text">
+                      <img src="images/bmwcar.png" alt="изображение передней части авто бмв " class="reviws__img3">
+                      <p class="reviws__text-info">Посмотрите реальные истории в нашем <strong class="advice__prim">Telegram-канале </strong>
+                        <a class="reviws__buttom" href="#">Перейти в Telegram </a>
+                      </p> 
+                    </div>
+                </div>           
+            </section>
+            <section class="advert">
+                <div class="advert__wrap">
+                    <h2 class="advert__title">
+                        Более 200 автомобилей привезено за 2022
+                    </h2>
+                    <div class="advert__frame">
+                        <p class="advert__info">
+                            Проверяем всю историю обслуживания, владения 
+                            и ДТП с помощью платных сервисов, созданных 
+                            для профессиональных продавцов автомобилей.
+                        </p>
+                        <div class="advert__tex">
+                            <p class="advert__tex-info">Мы помогли сэкономить клиентам около <strong class="advert__prim">240 000 000 ₽</strong></p>                            
+                        </div>
+                    </div>
+                    <a class="advert__buttom" href="#">Оставить заявку </a>
+                    <div class="advert__content">
+                        <img src="images/audi1869.png" alt="изображение авто ауди " class="advert__img1">
+                        <img src="images/volvo1871.png" alt="изображение авто вольвро" class="advert__img1">
+                        <img src="images/toyta1870.png" alt="изображение авто лексус" class="advert__img1"> 
+                    </div>
+                </div>
+            </section>
+
+            <section class="team">
+                <div class="team__wrap">
+                    <h2 class="team__title">Наша команда</h2>
+                    <p class="team__title-info">Опытные менеджеры поддерживают наших клиентов  </p>
+                    <div class="team_board">
+                        <div class="team__card team__card-img-1">
+                            <h3 class="team__card-title">Михаил Погосян</h3>
+                            <p class="team__card-job">Руководитель отдела</p>
+                            <a class="team__tel-number" href="tel:+79276665297">+7 (927) 666-52-97</a>
+                            <ul class="team__social-list">
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-telegram">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#telegram-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на телеграм</span>
+                                    </a>
+                                </li>
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-whatsapp">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#watsap-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на ветсап</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team__card team__card-img-2">
+                            <h3 class="team__card-title">Тимур Павлов</h3>
+                            <p class="team__card-job">Главный менеджер</p>
+                            <a class="team__tel-number" href="tel:+79276665297">+7 (927) 666-52-97</a>
+                            <ul class="team__social-list">
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-telegram">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#telegram-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на телеграм</span>
+                                    </a>
+                                </li>
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-whatsapp">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#watsap-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на ветсап</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team__card team__card-img-3">
+                            <h3 class="team__card-title">Арам Ароян</h3>
+                            <p class="team__card-job">Менеджер</p>
+                            <a class="team__tel-number" href="tel:+79276665297">+7 (927) 666-52-97</a>
+                            <ul class="team__social-list">
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-telegram">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#telegram-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на телеграм</span>
+                                    </a>
+                                </li>
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-whatsapp">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#watsap-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на ветсап</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team__card team__card-img-4">
+                            <h3 class="team__card-title">Денис Николаев</h3>
+                            <p class="team__card-job">Менеджер</p>
+                            <a class="team__tel-number" href="tel:+79276665297">+7 (927) 666-52-97</a>
+                            <ul class="team__social-list">
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-telegram">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#telegram-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на телеграм</span>
+                                    </a>
+                                </li>
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-whatsapp">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#watsap-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на ветсап</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team__card team__card-img-5">
+                            <h3 class="team__card-title">Алексей Кузнецов</h3>
+                            <p class="team__card-job">Менеджер</p>
+                            <a class="team__tel-number" href="tel:+79276665297">+7 (927) 666-52-97</a>
+                            <ul class="team__social-list">
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-telegram">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#telegram-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на телеграм</span>
+                                    </a>
+                                </li>
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-whatsapp">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#watsap-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на ветсап</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team__card team__card-img-6">
+                            <h3 class="team__card-title">Андрей Шахназарян</h3>
+                            <p class="team__card-job">Менеджер</p>
+                            <a class="team__tel-number" href="tel:+79276665297">+7 (927) 666-52-97</a>
+                            <ul class="team__social-list">
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-telegram">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#telegram-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на телеграм</span>
+                                    </a>
+                                </li>
+                                <li class="header__social-icon">
+                                    <a href="#" class="header__social-whatsapp">
+                                    <svg class="social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#watsap-social"></use>
+                                    </svg>
+                                        <span class="visually-hidden">ссылка на ветсап</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="chime">
+                <div class="chime__wrap">
+                    <div class="chime__case">
+                        <h2 class="chime__case-title">Только телефон, и мы в деле</h2>
+                        <p class="chime__case-text">Специалист перезвонит Вам в течение <br> 5 минут, в рабочее время для уточнения деталей</p>
+                        <form class="chime__form">
+                            <label>
+                                <input class="chime__input" type="tel" id="phone" name="phone" placeholder="+7 (927) 666-52-97" required>
+                            </label>
+                            <button class="chime__button"> Получить консультацию </button>
+                            <input class="chime__input-checkbox" type="checkbox" required id="policy">
+                            <label class="chime__checkbox" for="policy">
+                                 <span class="chime__checkbox-text">Нажимая на кнопку вы соглашаетесь с условиями Политики конфиденциальности</span>
+                            </label>              
+                        </form>
+                        <p class="chime__mesange">Связаться с нами через мессенджер</p>
+                        <div class="chime__social">
+                            <div class="chime__social-border">
+                                <a href="#" class="chime__social-whatsapp">
+                                    <svg class="chime__social-icon" width="20" height="20" viewBox="0 0 31 30">
+                                        <use href="images/sprite.svg#watsap-social"></use>
+                                    </svg>
+                                    <span class="chime__social-text">Whatsapp</span>
+                                </a>
+                            </div>
+                            <div class="chime__social-border">
+                                <a href="#" class="chime__social-telegram">
+                                    <svg class="chime__social-icon" width="20" height="20" viewBox="0 0 31 30" >
+                                        <use href="images/sprite.svg#telegram-social"></use>
+                                    </svg>
+                                    <span class="chime__social-text">Telegram</span>
+                                </a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="chime__services">
+                        <h2 class="chime__services-title">Точный расчет стоимости уже через 1 час</h2>
+                        <ul class="chime__info">
+                            <li class="chime__abinfo chime__abinfo-info-1">Расскажем какие автомобили вы можете купить с наибольшей выгодой.</li>
+                            <li class="chime__abinfo chime__abinfo-info-1">Отправим подобранные автомобили на ваш WatsApp или Telegram</li>
+                            <li class="chime__abinfo chime__abinfo-info-1">Сделаем точный расчет стоимости автомобиля с доставкой в ваш город “под ключ”</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__wrap">
+                    <h2 class="footer__title">Наши контакты</h2>
+                    <ul class="footer__content">
+                        <li class="footer__adress">
+                            <h3 class="footer_name">Адрес</h3>
+                            <a class="footer__text" href="#">428000, г. Чебоксары, <br> Марпосадское шоссе, 14.</a>
+                        </li>
+                        <li class="footer__time">
+                            <h3 class="footer_name">Время работы:</h3>
+                            <a class="footer__text" href="#">Ежедневно 10:00 до 19:00</a>
+                        </li>
+                        <li class="footer__tel">
+                            <h3 class="footer_name">Телефон:</h3>
+                            <a class="footer__text" href="tel:89279971242">8 927 997 12 42</a>
+                            <a class="footer__text" href="tel:89279971242">8 927 997 12 42</a>
+                        </li>
+                        <li class="footer_email">
+                            <h3 class="footer_name">E-mail:</h3>
+                            <a class="footer__text" href="mailto:carmark21@auto.ru">carmark21@auto.ru</a>    
+                        </li>
+                        <li class="footer__social">
+                            <h3 class="footer_name">Соц. сети:</h3> 
+                            <a href="#" class="footer__social-whatsapp">
+                              <svg class="footer__social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                <use href="images/sprite.svg#watsap-social"></use>
+                              </svg>
+                                <span class="visually-hidden">ссылка на ветсап</span>
+                            </a>
+                            <a href="#" class="footer__social-telegram">
+                              <svg class="footer__social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                <use href="images/sprite.svg#telegram-social"></use>
+                              </svg>
+                                <span class="visually-hidden">ссылка на телеграм</span>
+                            </a>
+                            <a href="#" class="footer__social-youtube">
+                              <svg class="footer__social-icon" width="31" height="30" viewBox="0 0 31 30" >
+                                <use href="images/sprite.svg#youtube-social"></use>
+                              </svg>
+                                <span class="visually-hidden">ссылка на ютуб</span>
+                            </a>
+                        </li>                        
+                    </ul>
+                    <address class="footer__map">                            
+                            <img class="footer__img" src="images/map.png" alt="карта местонахождения компании">                            
+                    </address>
+                    <ul class="footer__document">
+                        <li class="footer__recvizit">
+                            <a class="footer__link" href="#">Реквизиты</a>
+                        </li>
+                        <li class="footer__confid">
+                            <a class="footer__link" href="#">Политика конфиденциальности </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
 </body>
 </html>
